@@ -401,107 +401,62 @@
         </div>
       </div>
     </section>
-    <section class="bg-gray-900 text-white py-16">
-      <div class="container mx-auto px-6">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Get in <span class="text-blue-500">Touch</span>
-          </h2>
-          <p class="text-lg text-gray-400">
-            Have any questions? We’d love to hear from you!
-          </p>
-        </div>
-
-        <!-- Contact Form & Info Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Contact Form -->
-          <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
-            <form action="#" method="POST">
-              <div class="mb-4">
-                <label for="name" class="block text-gray-300 text-lg mb-2"
-                  >Your Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
-                />
-              </div>
-              <div class="mb-4">
-                <label for="email" class="block text-gray-300 text-lg mb-2"
-                  >Your Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
-                />
-              </div>
-              <div class="mb-4">
-                <label for="message" class="block text-gray-300 text-lg mb-2"
-                  >Your Message</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg transition"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
-            <div class="mb-6">
-              <h3 class="text-2xl font-semibold text-blue-500">
-                Contact Information
-              </h3>
-              <p class="text-gray-400 mt-2">
-                Reach out to us using the details below.
-              </p>
+    <section id="contact" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Get in <span class="text-blue-500">Touch</span></h2>
+                <p class="text-lg text-gray-400">Have any questions? We’d love to hear from you!</p>
             </div>
-            <div class="space-y-4">
-              <div class="flex items-center space-x-4">
-                <span class="text-blue-500 text-2xl">📍</span>
-                <p class="text-lg">123 Main Street, City, Country</p>
-              </div>
-              <div class="flex items-center space-x-4">
-                <span class="text-blue-500 text-2xl">📞</span>
-                <p class="text-lg">+123 456 7890</p>
-              </div>
-              <div class="flex items-center space-x-4">
-                <span class="text-blue-500 text-2xl">📧</span>
-                <p class="text-lg">contact@egyprojects.com</p>
-              </div>
-              <div class="flex space-x-4 mt-6">
-                <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                  >🌐</a
-                >
-                <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                  >📘</a
-                >
-                <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                  >🐦</a
-                >
-                <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                  >📸</a
-                >
-              </div>
+    
+            <!-- Contact Form & Info Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 text-lg mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 text-lg mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-300 text-lg mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg transition">
+                            Send via WhatsApp
+                        </button>
+                    </form>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-blue-500">Contact Information</h3>
+                        <p class="text-gray-400 mt-2">Reach out to us using the details below.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-blue-500 text-2xl">📍</span>
+                            <p class="text-lg">123 Main Street, City, Country</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-blue-500 text-2xl">📞</span>
+                            <p class="text-lg">+123 456 7890</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="text-blue-500 text-2xl">📧</span>
+                            <p class="text-lg">contact@egyprojects.com</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
+    
 
     <footer class="bg-gray-900 text-gray-300 py-10">
       <div class="container mx-auto px-6">

@@ -48,3 +48,29 @@ document.addEventListener("DOMContentLoaded", function () {
         isEnglish = !isEnglish;
     });
 });
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Get form data
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    // WhatsApp Number (Change this to your actual number)
+    let phoneNumber = "+201113923298";
+
+    // Construct the WhatsApp message
+    let whatsappMessage = `Hello ! I'm interested in your services. Here’s my 
+    Name: ${name}
+    Email: ${email}
+    Message: ${message}
+    Please get back to me soon!`;
+
+    // Encode message
+    let encodedMessage = encodeURIComponent(whatsappMessage);
+
+    // Open WhatsApp chat
+    window.open(`https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`, "_blank");
+});
+
