@@ -1,101 +1,112 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Navbar active link toggle
-  const links = document.querySelectorAll(".nav-link");
-  links.forEach((link) => {
-    link.addEventListener("click", function () {
-      links.forEach((l) => l.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  // Handle mobile menu toggle
+  const menuBtn = document.getElementById("menu-btn")
+  const mobileMenu = document.getElementById("mobile-menu")
 
-  // Mobile menu toggle
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
-  menuBtn.addEventListener("click", function () {
-    mobileMenu.classList.toggle("hidden");
-  });
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden")
+    })
+  }
 
-  // Dark/Light Mode Toggle
-  const themeBtn = document.getElementById("theme-btn");
-  themeBtn.addEventListener("click", function () {
-    document.body.classList.toggle("bg-gray-900");
-    document.body.classList.toggle("text-white");
-    document.body.classList.toggle("bg-white");
-    document.body.classList.toggle("text-black");
-  });
+  // Handle dark mode toggle
+  const darkModeToggle = document.getElementById("dark-mode-toggle")
 
-  // Translate Toggle
-  const translateBtn = document.getElementById("translate-btn");
-  let isEnglish = true;
-  translateBtn.addEventListener("click", function () {
-    const navLinks = document.querySelectorAll("#nav-links li a");
-    const heroTitle = document.getElementById("hero-title");
-    const heroText = document.getElementById("hero-text");
-
-    if (isEnglish) {
-      // Translate to Arabic
-      const arabicText = [
-        "الرئيسية",
-        "معلومات عنا",
-        "الخدمات",
-        "الفريق",
-        "اتصل بنا",
-      ];
-      navLinks.forEach((link, index) => (link.textContent = arabicText[index]));
-      heroTitle.textContent = "اكتشف عقارك المثالي مع إيستين";
-      heroText.textContent =
-        "رحلتك للعثور على العقار المثالي تبدأ هنا. تصفح قوائمنا للعثور على المنزل الذي يناسب أحلامك.";
-    } else {
-      // Translate to English
-      const englishText = ["Home", "About", "Services", "Team", "Contact"];
-      navLinks.forEach(
-        (link, index) => (link.textContent = englishText[index])
-      );
-      heroTitle.textContent = "Discover Your Dream Property with Estatein";
-      heroText.textContent =
-        "Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.";
+  if (darkModeToggle) {
+    // Check for saved dark mode preference
+    if (localStorage.getItem("darkMode") === "enabled") {
+      document.documentElement.classList.add("dark")
+      updateDarkModeIcon(true)
     }
-    isEnglish = !isEnglish;
-  });
-});
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+    darkModeToggle.addEventListener("click", () => {
+      if (document.documentElement.classList.contains("dark")) {
+        document.documentElement.classList.remove("dark")
+        localStorage.setItem("darkMode", "disabled")
+        updateDarkModeIcon(false)
+      } else {
+        document.documentElement.classList.add("dark")
+        localStorage.setItem("darkMode", "enabled")
+        updateDarkModeIcon(true)
+      }
+    })
+  }
 
-    // Get form data
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
+  function updateDarkModeIcon(isDark) {
+    if (darkModeToggle) {
+      if (isDark) {
+        darkModeToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        `
+      } else {
+        darkModeToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        `
+      }
+    }
+  }
 
-    // WhatsApp Number (Change this to your actual number)
-    let phoneNumber = "+201113923298";
+  // Handle contact form submission
+  const contactForm = document.getElementById("contact-form")
 
-    // Construct the WhatsApp message
-    let whatsappMessage = `Hello ! I'm interested in your services. Here’s my 
-    Name: ${name}
-    Email: ${email}
-    Message: ${message}
-    Please get back to me soon!`;
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault()
 
-    // Encode message
-    let encodedMessage = encodeURIComponent(whatsappMessage);
+      const name = document.getElementById("name").value
+      const email = document.getElementById("email").value
+      const message = document.getElementById("message").value
 
-    // Open WhatsApp chat
-    window.open(
-      `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodedMessage}&type=phone_number&app_absent=0`,
-      "_blank"
-    );
-  });
-// loading page start
-window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
+      // Format message for WhatsApp
+      const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`
 
-  loader.classList.add("loader--hidden");
+      // Open WhatsApp with the message
+      window.open(`https://wa.me/1234567890?text=${whatsappMessage}`, "_blank")
+    })
+  }
 
-  loader.addEventListener("transitionend", () => {
-    document.body.removeChild(loader);
-  });
-});
-//   loading page end
+  // Hide loader when page is loaded
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader")
+    if (loader) {
+      setTimeout(() => {
+        loader.style.opacity = "0"
+        setTimeout(() => {
+          loader.style.display = "none"
+        }, 500)
+      }, 1000)
+    }
+  })
+
+  // Smooth scroll for navigation links
+  const navLinks = document.querySelectorAll('a[href^="#"]')
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href")
+
+      if (href !== "#") {
+        e.preventDefault()
+        const targetElement = document.querySelector(href)
+
+        if (targetElement) {
+          // Close mobile menu if open
+          if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden")
+          }
+
+          // Scroll to the target element
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+          })
+        }
+      }
+    })
+  })
+})
+

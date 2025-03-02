@@ -9,87 +9,92 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body class="bg-gray-800 overflow-x-hidden">
-    <nav class="bg-gray-800 py-4 shadow-lg">
+  <body class="bg-amber-50 overflow-x-hidden">
+    <nav class="bg-amber-50 py-4 shadow-lg">
       <div class="container mx-auto flex justify-between items-center px-4">
-        <h1 class="font-serif text-2xl text-yellow-500">EGY PROJECTS</h1>
+        <h1 class="font-serif text-2xl text-amber-400">EGY PROJECTS</h1>
         <div class="flex items-center space-x-4">
-          <button id="menu-btn" class="text-white md:hidden text-2xl">☰</button>
+          <button id="dark-mode-toggle" class="p-2 rounded-full bg-amber-100 hover:bg-amber-200 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800 dark:text-amber-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </button>
+          <button id="menu-btn" class="text-amber-800 md:hidden text-2xl">☰</button>
         </div>
-        <div class="hidden md:flex flex-grow justify-center">
+        <div class="hidden md:flex flex-grow justify-end">
           <ul class="flex space-x-6">
             <li>
               <a
                 href="#"
-                class="nav-link px-4 py-2 text-white text-lg font-medium transition-all duration-300 rounded-md hover:bg-blue-500"
+                class="nav-link px-4 py-2 text-amber-600 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="#about"
-                class="nav-link px-4 py-2 text-white text-lg font-medium transition-all duration-300 rounded-md hover:bg-blue-500"
+                class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#serv"
-                class="nav-link px-4 py-2 text-white text-lg font-medium transition-all duration-300 rounded-md hover:bg-blue-500"
-                >Services</a
+                class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
+                >We Provide</a
               >
             </li>
             <li>
               <a
                 href="#team"
-                class="nav-link px-4 py-2 text-white text-lg font-medium transition-all duration-300 rounded-md hover:bg-blue-500"
+                class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
                 >Team</a
               >
             </li>
             <li>
               <a
                 href="#cont"
-                class="nav-link px-4 py-2 text-white text-lg font-medium transition-all duration-300 rounded-md hover:bg-blue-500"
+                class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
                 >Contact</a
               >
             </li>
           </ul>
         </div>
       </div>
-      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 p-4">
+      <div id="mobile-menu" class="hidden md:hidden bg-amber-100 p-4">
         <ul class="space-y-2">
           <li>
             <a
               href="#"
-              class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-500"
+              class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
               >Home</a
             >
           </li>
           <li>
             <a
               href="#about"
-              class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-500"
+              class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
               >About</a
             >
           </li>
           <li>
             <a
               href="#serv"
-              class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-500"
-              >Services</a
+              class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
+              >We Provide</a
             >
           </li>
           <li>
             <a
               href="#team"
-              class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-500"
+              class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
               >Team</a
             >
           </li>
           <li>
             <a
               href="#cont"
-              class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-500"
+              class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
               >Contact</a
             >
           </li>
@@ -104,24 +109,24 @@
       class="relative bg-gray-900 text-white py-16 bg-cover bg-center bg-no-repeat"
       style="background-image: url('imgs/pexels-binyaminmellish-186077.jpg')"
     >
-      <div class="absolute inset-0 bg-black opacity-30"></div>
+      <div class="absolute inset-0 bg-amber-50 opacity-10"></div>
       <div
         class="relative container mx-auto flex flex-col md:flex-row items-center justify-between px-4"
       >
         <!-- Left Content -->
         <div>
           <div class="md:w-1/2">
-            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-white">
               Discover Your Dream Property with
-              <span class="text-yellow-500">EGY PROJECTS</span>
+              <span class="text-amber-400">EGY PROJECTS</span>
             </h1>
-            <p class="text-lg mb-6">
+            <p class="text-lg mb-6 text-gray-100">
               Your journey to finding the perfect property begins here. Explore
               our listings to find the home that matches your dreams.
             </p>
             <div class="flex space-x-4 mb-8">
               <button
-                class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-500 transition"
+                class="px-6 py-3 bg-amber-500 text-white font-medium rounded-lg hover:bg-amber-400 transition"
               >
                 Learn More
               </button>
@@ -129,28 +134,28 @@
             <!-- Cards -->
             <div class="grid grid-cols-2 gap-4">
               <div
-                class="bg-gray-800 border border-gray-700 p-6 rounded-xl text-center"
+                class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center"
               >
-                <h2 class="text-3xl font-bold">200+</h2>
-                <p class="text-gray-400">Happy Customers</p>
+                <h2 class="text-3xl font-bold text-amber-800">200+</h2>
+                <p class="text-amber-800">Happy Customers</p>
               </div>
               <div
-                class="bg-gray-800 border border-gray-700 p-6 rounded-xl text-center"
+                class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center"
               >
-                <h2 class="text-3xl font-bold">10k+</h2>
-                <p class="text-gray-400">Properties For Clients</p>
+                <h2 class="text-3xl font-bold text-amber-800">10k+</h2>
+                <p class="text-amber-800">Properties For Clients</p>
               </div>
               <div
-                class="bg-gray-800 border border-gray-700 p-6 rounded-xl text-center"
+                class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center"
               >
-                <h2 class="text-3xl font-bold">16+</h2>
-                <p class="text-gray-400">Years of Experience</p>
+                <h2 class="text-3xl font-bold text-amber-800">16+</h2>
+                <p class="text-amber-800">Years of Experience</p>
               </div>
               <div
-                class="bg-gray-800 border border-gray-700 p-6 rounded-xl text-center"
+                class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center"
               >
-                <h2 class="text-3xl font-bold">16+</h2>
-                <p class="text-gray-400">Years of Experience</p>
+                <h2 class="text-3xl font-bold text-amber-800">16+</h2>
+                <p class="text-amber-800">Years of Experience</p>
               </div>
             </div>
           </div>
@@ -166,16 +171,16 @@
         <!-- Left Content -->
         <div class="md:w-1/2 mb-8 md:mb-0">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            About <span class="text-yellow-500">EGY PROJECTS</span>
+            About <span class="text-amber-500">EGY PROJECTS</span>
           </h2>
-          <p class="text-lg text-gray-500 mb-6">
+          <p class="text-lg text-amber-800 mb-6">
             At EGY PROJECTS, we are dedicated to connecting people with their
             dream properties. With over 16 years of experience, we’ve
             established ourselves as a trusted name in the real estate industry,
             offering an extensive range of properties to meet the diverse needs
             of our clients.
           </p>
-          <p class="text-lg text-gray-500 mb-6">
+          <p class="text-lg text-amber-800 mb-6">
             Our team of experts works tirelessly to ensure customer
             satisfaction, delivering exceptional services, from property
             listings to personalized consultations. Let us help you find the
@@ -195,340 +200,502 @@
         </div>
       </div>
     </section>
-    <section class="bg-cyan-900 text-white py-16">
-      <div id="serv" class="container mx-auto px-6">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Our <span class="text-blue-500">Services</span>
-          </h2>
-          <p class="text-lg text-gray-300">
-            We offer a variety of professional services to meet your property needs.
-          </p>
-        </div>
-    
-        <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Service Cards -->
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <div class="flex justify-center mb-4">
-              <div class="bg-blue-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16l-4-4m0 0l4-4m-4 4h16"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Property Listings</h3>
-            <p class="text-gray-300">Explore an extensive selection of properties to suit every budget and preference.</p>
-          </div>
-    
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <div class="flex justify-center mb-4">
-              <div class="bg-blue-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m2 0a2 2 0 100-4h-6a2 2 0 100 4h-2"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Consultations</h3>
-            <p class="text-gray-300">Receive expert advice tailored to help you make informed decisions.</p>
-          </div>
-    
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <div class="flex justify-center mb-4">
-              <div class="bg-blue-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21H3v-7a4 4 0 014-4h10m6 4h-1a4 4 0 00-3.98 3.6l-.02.4H15a3 3 0 100 6h6m0-6v6m0-6h-6"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Property Management</h3>
-            <p class="text-gray-300">Let us handle the management of your properties, ensuring seamless operations.</p>
-          </div>
-    
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <div class="flex justify-center mb-4">
-              <div class="bg-blue-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-2.333 0-4 1.667-4 4m8-4c2.333 0 4 1.667 4 4m-4-4v1.75a1.5 1.5 0 001.5 1.5h1.75m-11 5c0 2.333 1.667 4 4 4m-4-4v-1.75a1.5 1.5 0 011.5-1.5h1.75m6 4v1.75a1.5 1.5 0 01-1.5 1.5H9.75"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Financial Guidance</h3>
-            <p class="text-gray-300">Navigate the financial aspects of property transactions with our expert help.</p>
-          </div>
-    
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <div class="flex justify-center mb-4">
-              <div class="bg-blue-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16V4H4zm6 4h4m-4 4h4m-4 4h4"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Custom Property Solutions</h3>
-            <p class="text-gray-300">We create tailored solutions to meet your unique property requirements.</p>
-          </div>
-    
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <div class="flex justify-center mb-4">
-              <div class="bg-blue-500 text-white p-4 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2m0 0l4-4m-4 4V6"/>
-                </svg>
-              </div>
-            </div>
-            <h3 class="text-2xl font-semibold mb-4">Market Analysis</h3>
-            <p class="text-gray-300">Get a comprehensive understanding of the current market trends.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="bg-cyan-900 text-white py-16">
-      <div id="team" class="container mx-auto px-6">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Meet Our <span class="text-blue-500">Team</span>
-          </h2>
-          <p class="text-lg text-gray-300">
-            Our team of experienced professionals is here to guide you every
-            step of the way.
-          </p>
-        </div>
-    
-        <!-- Team Members Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Team Member 1 -->
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <img src="imgs/download.jpg" alt="Team Member"
-              class="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 class="text-2xl font-semibold mb-2">John Doe</h3>
-            <p class="text-blue-400 font-medium mb-4">CEO & Founder</p>
-            <p class="text-gray-300 text-sm mb-4">
-              With over 15 years of experience, John leads the company with passion and innovation.
-            </p>
-            <div class="flex justify-center space-x-4">
-              <a href="#" class="text-gray-300 hover:text-blue-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M24 4.6c-.9.4-1.9.6-2.9.8 1-.6 1.8-1.6 2.2-2.7-.9.5-2 .9-3.1 1.1-1-1.1-2.4-1.6-3.8-1.6-3.1 0-5.6 2.5-5.6 5.6 0 .4 0 .9.1 1.3C7.7 8.1 4.1 6.1 1.7 3.1c-.4.7-.6 1.6-.6 2.5 0 1.8.9 3.4 2.3 4.3-.8 0-1.6-.3-2.3-.6v.1c0 2.5 1.8 4.6 4.1 5.1-.4.1-.8.2-1.3.2-.3 0-.6 0-.9-.1.6 2 2.5 3.5 4.7 3.5-1.8 1.4-4.1 2.3-6.6 2.3-.4 0-.8 0-1.2-.1 2.4 1.5 5.2 2.3 8.3 2.3 9.9 0 15.4-8.2 15.4-15.4 0-.2 0-.5 0-.7 1-.7 1.8-1.6 2.4-2.5z" />
-                </svg>
-              </a>
-              <a href="#" class="text-gray-300 hover:text-blue-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    d="M22.2 0H1.8C.8 0 0 .8 0 1.8v20.4C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.8V1.8C24 .8 23.2 0 22.2 0zm-5 7.3h-3.2v2.7H17v2.7h-3.2v8.1H10V12.7H8.1v-2.7h1.8V7.3c0-1.4.5-2.4 1.2-3.1.8-.7 1.9-1 3.2-1 .9 0 1.8.1 2.5.2v2.9h-1.7c-.8 0-1.4.2-1.7.6-.3.3-.4.8-.4 1.5v2.2h3.2v2.7z" />
-                </svg>
-              </a>
-            </div>
-          </div>
-    
-          <!-- Team Member 2 -->
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <img src="imgs/images.jpg" alt="Team Member"
-              class="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 class="text-2xl font-semibold mb-2">Jane Smith</h3>
-            <p class="text-blue-400 font-medium mb-4">Head of Sales</p>
-            <p class="text-gray-300 text-sm mb-4">
-              Jane has helped hundreds of clients find their dream homes.
-            </p>
-          </div>
-    
-          <!-- Team Member 3 -->
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <img src="imgs/man-white_1368-3544.avif" alt="Team Member"
-              class="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 class="text-2xl font-semibold mb-2">Mike Johnson</h3>
-            <p class="text-blue-400 font-medium mb-4">Operations Manager</p>
-            <p class="text-gray-300 text-sm mb-4">
-              Mike ensures smooth and efficient day-to-day business operations.
-            </p>
-          </div>
-    
-          <!-- Team Member 4 -->
-          <div class="bg-cyan-900 border border-cyan-700 p-6 rounded-xl text-center">
-            <img src="imgs/download (1).jpg" alt="Team Member"
-              class="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h3 class="text-2xl font-semibold mb-2">Sarah Williams</h3>
-            <p class="text-blue-400 font-medium mb-4">Marketing Lead</p>
-            <p class="text-gray-300 text-sm mb-4">
-              Sarah brings creative strategies to promote our services effectively.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="contact" class="bg-gray-900 text-white py-16">
+    <section id="why-us" class="bg-amber-50 py-16">
       <div class="container mx-auto px-6">
-        <!-- Section Header -->
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Get in <span class="text-blue-500">Touch</span>
+            Why <span class="text-amber-500">Choose Us?</span>
           </h2>
-          <p class="text-lg text-gray-400">
-            Have any questions? We’d love to hear from you!
+          <p class="text-lg text-amber-900 max-w-3xl mx-auto">
+            At EGY PROJECTS, we stand out from the competition for several compelling reasons.
           </p>
         </div>
 
-        <!-- Contact Form & Info Grid -->
-        <div id="cont" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Contact Form -->
-          <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
-            <form id="contact-form">
-              <div class="mb-4">
-                <label for="name" class="block text-gray-300 text-lg mb-2"
-                  >Your Name</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label for="email" class="block text-gray-300 text-lg mb-2"
-                  >Your Email</label
-                >
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
-                  required
-                />
-              </div>
-              <div class="mb-4">
-                <label for="message" class="block text-gray-300 text-lg mb-2"
-                  >Your Message</label
-                >
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg border border-gray-600 focus:outline-none focus:border-blue-500"
-                  required
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg transition"
-              >
-                Send via WhatsApp
-              </button>
-            </form>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
-            <div class="mb-6">
-              <h3 class="text-2xl font-semibold text-blue-500">
-                Contact Information
-              </h3>
-              <p class="text-gray-400 mt-2">
-                Reach out to us using the details below.
-              </p>
-            </div>
-            <div class="space-y-4">
-              <div class="flex items-center space-x-4">
-                <span class="text-blue-500 text-2xl">📍</span>
-                <p class="text-lg">123 Main Street, City, Country</p>
-              </div>
-              <div class="flex items-center space-x-4">
-                <span class="text-blue-500 text-2xl">📞</span>
-                <p class="text-lg">+123 456 7890</p>
-              </div>
-              <div class="flex items-center space-x-4">
-                <span class="text-blue-500 text-2xl">📧</span>
-                <p class="text-lg">contact@egyprojects.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="bg-gray-900 text-gray-300 py-10">
-      <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Company Info -->
-          <div>
-            <h3 class="text-2xl font-bold text-white">EGY PROJECTS</h3>
-            <p class="mt-3 text-gray-400">
-              Providing top-tier real estate solutions for over 16 years.
-            </p>
-            <div class="flex space-x-4 mt-4">
-              <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                >🌐</a
-              >
-              <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                >📘</a
-              >
-              <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                >🐦</a
-              >
-              <a href="#" class="text-gray-400 hover:text-blue-500 text-2xl"
-                >📸</a
-              >
+          <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
             </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">Unmatched Expertise</h3>
+            <p class="text-amber-800">With over 16 years in the real estate industry, our team brings unparalleled knowledge and expertise to every client interaction. We understand the market intricacies and leverage this insight to your advantage.</p>
           </div>
 
-          <!-- Quick Links -->
-          <div>
-            <h4 class="text-xl font-semibold text-white mb-3">Quick Links</h4>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="hover:text-blue-500 transition">Home</a>
+          <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">Client-Centered Approach</h3>
+            <p class="text-amber-800">We prioritize your needs and preferences, tailoring our services to match your unique requirements. Our client-centered approach ensures that your property journey is smooth, transparent, and successful.</p>
+          </div>
+
+          <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">Exclusive Property Portfolio</h3>
+            <p class="text-amber-800">Access our exclusive portfolio of premium properties across diverse locations. We maintain strong relationships with top developers, giving you first access to the best properties before they hit the market.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-amber-50 py-16">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Our Mission -->
+          <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-amber-900">Our <span class="text-amber-500">Mission</span></h2>
+            <p class="text-amber-800 mb-4">
+              Our mission at EGY PROJECTS is to transform the real estate experience through integrity, innovation, and exceptional service. We are committed to:
+            </p>
+            <ul class="space-y-3 text-amber-800">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Connecting clients with properties that enhance their quality of life and meet their investment goals.</span>
               </li>
-              <li>
-                <a href="#" class="hover:text-blue-500 transition">About</a>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Providing transparent, ethical guidance throughout the property acquisition process.</span>
               </li>
-              <li>
-                <a href="#" class="hover:text-blue-500 transition">Services</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-500 transition">Team</a>
-              </li>
-              <li>
-                <a href="#" class="hover:text-blue-500 transition">Contact</a>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Building lasting relationships based on trust, expertise, and exceptional results.</span>
               </li>
             </ul>
           </div>
 
-          <!-- Contact Information -->
-          <div>
-            <h4 class="text-xl font-semibold text-white mb-3">Contact Us</h4>
-            <p class="flex items-center space-x-3">
-              <span>📍</span> <span>123 Main Street, City, Country</span>
+          <!-- Our Vision -->
+          <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-amber-900">Our <span class="text-amber-500">Vision</span></h2>
+            <p class="text-amber-800 mb-4">
+              We envision a future where finding and acquiring property is a seamless, enjoyable experience for everyone. Our vision encompasses:
             </p>
-            <p class="flex items-center space-x-3">
-              <span>📞</span> <span>+123 456 7890</span>
-            </p>
-            <p class="flex items-center space-x-3">
-              <span>📧</span> <span>contact@egyprojects.com</span>
-            </p>
+            <ul class="space-y-3 text-amber-800">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Being the most trusted and innovative real estate partner in Egypt and beyond.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Setting new standards for client satisfaction and service excellence in the real estate industry.</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>Contributing to community development through responsible real estate practices and partnerships.</span>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- Bottom Section -->
-        <div class="border-t border-gray-700 mt-8 pt-6 text-center">
-          <p class="text-gray-400">
-            &copy; 2025 EGY PROJECTS. All Rights Reserved.
+      </div>
+    </section>
+    <section class="bg-amber-50 text-white py-16">
+      <div id="serv" class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            We <span class="text-amber-500">Provide</span>
+          </h2>
+          <p class="text-lg text-amber-900">
+            Comprehensive real estate solutions tailored to your specific needs.
           </p>
         </div>
-      </div>
-    </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="main.js"></script>
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Cards -->
+          <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">First Home</h3>
+            <p class="text-amber-800">Find your perfect first home with our expert guidance and exclusive listings tailored for first-time buyers.</p>
+          </div>
+
+          <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Second Home</h3>
+            <p class="text-amber-800">Discover the perfect vacation or investment property to complement your primary residence.</p>
+          </div>
+
+          <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Commercial</h3>
+            <p class="text-amber-800">Premium commercial spaces for businesses of all sizes, from retail locations to office complexes.</p>
+          </div>
+
+          <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Clinics</h3>
+            <p class="text-amber-800">Specialized properties designed for healthcare professionals, with optimal layouts for medical practices.</p>
+          </div>
+
+          <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Development Land</h3>
+            <p class="text-amber-800">Prime land parcels for development projects, with strategic locations and growth potential.</p>
+          </div>
+
+          <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
+            <div class="flex justify-center mb-4">
+              <div class="bg-amber-500 text-white p-4 rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Admin</h3>
+            <p class="text-amber-800">Comprehensive administrative services for property owners, including management and maintenance solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-amber-50 py-16">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            Our <span class="text-amber-500">Partners</span>
+          </h2>
+          <p class="text-lg text-amber-900 max-w-3xl mx-auto">
+            We collaborate with industry leaders to bring you the best property options and services.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+         
+          <div class="bg-white p-6 rounded-xl shadow-md flex items-center justify-center">
+            <img src="/egyprojects\imgs\208425657_2018854078252902_3988740191834376921_n-e1627469567954.png" alt="Partner 2" class="max-h-20" />
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md flex items-center justify-center">
+            <img src="/egyprojects\imgs\Coldwell-Banker-Egypt-67689-1630593985-og.webp" alt="Partner 3" class="max-h-28" />
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md flex items-center justify-center">
+            <img src="/egyprojects\imgs\images (2).png" alt="Partner 4" class="max-h-28" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-amber-50 py-16">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+            We Deal With <span class="text-amber-500">Top Developers</span>
+        
+      <p class="text-lg text-amber-900 max-w-3xl mx-auto">
+        Access exclusive properties from Egypt's premier real estate developers through our established partnerships.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Developer Cards -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\F9WZJXdR213lgKUF.jpg" alt="Palm Hills" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Palm Hills</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\images (1).png" alt="Mountain View" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Mountain View</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\شركة-مصر-ايطاليا-العقارية.png" alt="Misr Italia" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Misr Italia</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\People-and-Places.jpg" alt="People & Places" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">People & Places</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\تطوير-مصر-العقارية.jpg" alt="Tatweer Misr" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Tatweer Misr</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\cjM5QRQlszBIpa6N_thumb.jpg" alt="Tameer" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Tameer</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\كمبوند-هايد-بارك-القاهرة-الجديدة-11.jpg" alt="Hyde Park" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Hyde Park</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\21409362.png" alt="Modon" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Modon</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\ريدي-جروب-للتطوير-العقارى.jpg" alt="Reedy Group" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Reedy Group</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\ora_developers_egypt_logo.jpeg" alt="ORA" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">ORA</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\La-vista-developments-png-300x225.png" alt="La Vista" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">La Vista</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\WhatsApp-Image-2022-07-28-at-12.38.04-PM-2.webp" alt="Inertia" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Inertia</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/placeholder.svg" alt="Kalture" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Kalture</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\89201688644570.webp" alt="Upwyde" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Upwyde</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\Doja.jpg" alt="Doja" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Doja</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\pyramids.jpg" alt="Pyramids" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Pyramids</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\wKlXxUVNTH50NlBe.jpg" alt="Ahly Sabour" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Ahly Sabour</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\images.jpeg" alt="K-Development" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">K-Development</h3>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="h-32 bg-amber-100 flex items-center justify-center">
+          <img src="/egyprojects\imgs\toledo_development_logo.jpeg" alt="Toledo" class="max-h-20" />
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-amber-900">Toledo</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-amber-50 text-amber-800 py-10">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Company Info -->
+      <div>
+        <h3 class="text-2xl font-bold text-amber-900">EGY PROJECTS</h3>
+        <p class="mt-3 text-amber-800">
+          Providing top-tier real estate solutions for over 16 years.
+        </p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-amber-800 hover:text-amber-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-amber-800 hover:text-amber-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-amber-800 hover:text-amber-500 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-xl font-semibold text-amber-900 mb-3">Quick Links</h4>
+        <ul class="space-y-2">
+          <li>
+            <a href="#" class="hover:text-amber-500 transition text-amber-800">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-amber-500 transition text-amber-800">About</a>
+          </li>
+          <li>
+            <a href="#serv" class="hover:text-amber-500 transition text-amber-800">We Provide</a>
+          </li>
+          <li>
+            <a href="#why-us" class="hover:text-amber-500 transition text-amber-800">Why Us</a>
+          </li>
+          <li>
+            <a href="#cont" class="hover:text-amber-500 transition text-amber-800">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+        <h4 class="text-xl font-semibold text-amber-900 mb-3">Contact Us</h4>
+        <a href="https://maps.app.goo.gl/EhcUERCzRnCk4r8x8"> <p class="flex items-center space-x-3 text-amber-800">
+          <span>📍</span> <span>التجمع الاول-ميراج مول-الدور3</span>
+        </p></a>
+       
+        
+        <p class="flex items-center space-x-3 text-amber-800">
+          <span>📞</span> <span>01040588778</span>
+        </p>
+        <p class="flex items-center space-x-3 text-amber-800">
+          <span>📧</span> <span><a href="" class="__cf_email__" data-cfemail="4d2e2223392c2e390d282a343d3f2227282e393e632e2220">info@egy-projects.com</a></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="border-t border-amber-200 mt-8 pt-6 text-center">
+      <p class="text-amber-800">
+        &copy; 2025 EGY PROJECTS. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="main.js"></script>
   </body>
 </html>
+
