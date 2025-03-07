@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta name="robots" content="index, follow">
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="QCtTi8xUWhwVE4pCdCPRVaoVQFHXe3quuhRMOXH3qV8" />
-    <title>EGY-PROJECTS | Real Estate Development</title>
+    <title>إيجي بروجكتس | التطوير العقاري</title>
     <meta name="author" content="EGY-PROJECTS">
     <meta name="keywords" content="egy-projects, EGY-PROJECTS, real estate, real estate development, property investment, lands, apartments, commercial properties, villas, new developments, real estate Egypt, عقارات, استثمار عقاري, شقق للبيع, فلل, أراضي, عقارات مصر, مشروعات جديدة, تطوير عقاري, شركات عقارية, properties for sale, real estate company, real estate investment, real estate projects">
-    <meta name="description" content="EGY-PROJECTS is a leading real estate development company offering premium properties, lands, and investment opportunities in Egypt.">
+    <meta name="description" content="إيجي بروجكتس هي شركة رائدة في مجال التطوير العقاري تقدم عقارات متميزة وأراضي وفرص استثمارية في مصر.">
     <link rel="canonical" href="https://egy-projects.com/">
     <meta name="application-name" content="EGY-PROJECTS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,12 +23,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+      }
+    </style>
   </head>
 
   <body class="bg-amber-50 overflow-x-hidden">
     <nav class="bg-amber-50 py-4 shadow-lg">
       <div class="container mx-auto flex justify-between items-center px-4">
-        <h1 class="font-serif text-2xl text-amber-400">EGY PROJECTS</h1>
+        <h1 class="font-serif text-2xl text-amber-400">إيجي بروجكتس</h1>
         <div class="flex items-center space-x-4">
           <button id="dark-mode-toggle" class="p-2 rounded-full bg-amber-100 hover:bg-amber-200 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800 dark:text-amber-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,9 +45,7 @@
             </svg>
           </button>
 
-          <a href="/egyprojects/public/arabic.html"><button id="lang-toggle" class="px-4 py-2 text-lg font-medium text-amber-800 bg-amber-100 rounded-md hover:bg-amber-200 transition">
-            العربية
-          </button></a>
+          
           <button id="menu-btn" class="text-amber-800 md:hidden text-2xl">☰</button>
         </div>
         <div class="hidden md:flex flex-grow justify-end">
@@ -47,21 +54,21 @@
               <a
                 href="#"
                 class="nav-link px-4 py-2 text-amber-600 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
-                >Home</a
+                >الرئيسية</a
               >
             </li>
             <li>
               <a
                 href="#about"
                 class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
-                >About</a
+                >من نحن</a
               >
             </li>
             <li>
               <a
                 href="#serv"
                 class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
-                >We Provide</a
+                >نقدم</a
               >
             </li>
            
@@ -69,7 +76,7 @@
               <a
                 href="#cont"
                 class="nav-link px-4 py-2 text-amber-900 text-lg font-medium transition-all duration-300 rounded-md hover:bg-amber-200"
-                >Contact</a
+                >اتصل بنا</a
               >
             </li>
           </ul>
@@ -81,21 +88,21 @@
             <a
               href="#"
               class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
-              >Home</a
+              >الرئيسية</a
             >
           </li>
           <li>
             <a
               href="#about"
               class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
-              >About</a
+              >من نحن</a
             >
           </li>
           <li>
             <a
               href="#serv"
               class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
-              >We Provide</a
+              >نقدم</a
             >
           </li>
           
@@ -103,7 +110,7 @@
             <a
               href="#cont"
               class="block text-amber-900 text-lg font-medium px-4 py-2 rounded-md hover:bg-amber-200"
-              >Contact</a
+              >اتصل بنا</a
             >
           </li>
         </ul>
@@ -125,18 +132,17 @@
         <div>
           <div class="md:w-1/2">
             <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-white">
-              Discover Your Dream Property with
-              <span class="text-amber-400">EGY PROJECTS</span>
+              اكتشف عقارك المثالي مع
+              <span class="text-amber-400">إيجي بروجكتس</span>
             </h1>
             <p class="text-lg mb-6 text-gray-100">
-              Your journey to finding the perfect property begins here. Explore
-              our listings to find the home that matches your dreams.
+              رحلتك للعثور على العقار المثالي تبدأ هنا. استكشف قوائمنا للعثور على المنزل الذي يطابق أحلامك.
             </p>
             <div class="flex space-x-4 mb-8">
               <button
                 class="px-6 py-3 bg-amber-500 text-white font-medium rounded-lg hover:bg-amber-400 transition"
               >
-                Learn More
+                اعرف المزيد
               </button>
             </div>
             <!-- Cards -->
@@ -144,14 +150,14 @@
               <div
                 class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center"
               >
-                <h2 class="text-3xl font-bold text-amber-800">200+</h2>
-                <p class="text-amber-800">Happy Customers</p>
+                <h2 class="text-3xl font-bold text-amber-800">+200</h2>
+                <p class="text-amber-800">عميل سعيد</p>
               </div>
               <div
                 class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center"
               >
-                <h2 class="text-3xl font-bold text-amber-800">10k+</h2>
-                <p class="text-amber-800">Properties For Clients</p>
+                <h2 class="text-3xl font-bold text-amber-800">+10k</h2>
+                <p class="text-amber-800">عقار لعملائنا</p>
               </div>
               
           </div>
@@ -160,27 +166,20 @@
         <!-- Right Image -->
       </div>
     </section>
-    <section id="about" class="relative  py-16">
+    <section id="about" class="relative py-16">
       <div
         class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6"
       >
         <!-- Left Content -->
         <div class="md:w-1/2 mb-8 md:mb-0">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            About <span class="text-amber-500">EGY PROJECTS</span>
+            عن <span class="text-amber-500">إيجي بروجكتس</span>
           </h2>
           <p class="text-lg text-amber-800 mb-6">
-            At EGY PROJECTS, we are dedicated to connecting people with their
-            dream properties. With over 10 years of experience, we’ve
-            established ourselves as a trusted name in the real estate industry,
-            offering an extensive range of properties to meet the diverse needs
-            of our clients.
+            في إيجي بروجكتس، نحن مكرسون لربط الناس بعقاراتهم المثالية. مع أكثر من 10 سنوات من الخبرة، أسسنا أنفسنا كاسم موثوق به في صناعة العقارات، ونقدم مجموعة واسعة من العقارات لتلبية الاحتياجات المتنوعة لعملائنا.
           </p>
           <p class="text-lg text-amber-800 mb-6">
-            Our team of experts works tirelessly to ensure customer
-            satisfaction, delivering exceptional services, from property
-            listings to personalized consultations. Let us help you find the
-            perfect place to call home.
+            يعمل فريق الخبراء لدينا بلا كلل لضمان رضا العملاء، وتقديم خدمات استثنائية، من قوائم العقارات إلى الاستشارات الشخصية. دعنا نساعدك في العثور على المكان المثالي لتسميه منزلك.
           </p>
         </div>
 
@@ -200,10 +199,10 @@
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Why <span class="text-amber-500">Choose Us?</span>
+            لماذا <span class="text-amber-500">تختارنا؟</span>
           </h2>
           <p class="text-lg text-amber-900 max-w-3xl mx-auto">
-            At EGY PROJECTS, we stand out from the competition for several compelling reasons.
+            في إيجي بروجكتس، نتميز عن المنافسة لعدة أسباب مقنعة.
           </p>
         </div>
 
@@ -216,8 +215,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">Unmatched Expertise</h3>
-            <p class="text-amber-800">With over 10 years in the real estate industry, our team brings unparalleled knowledge and expertise to every client interaction. We understand the market intricacies and leverage this insight to your advantage.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">خبرة لا مثيل لها</h3>
+            <p class="text-amber-800">مع أكثر من 10 سنوات في صناعة العقارات، يجلب فريقنا معرفة وخبرة لا مثيل لها لكل تفاعل مع العملاء. نحن نفهم تعقيدات السوق ونستفيد من هذه الرؤية لصالحك.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
@@ -228,8 +227,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">Client-Centered Approach</h3>
-            <p class="text-amber-800">We prioritize your needs and preferences, tailoring our services to match your unique requirements. Our client-centered approach ensures that your property journey is smooth, transparent, and successful.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">نهج يركز على العميل</h3>
+            <p class="text-amber-800">نحن نعطي الأولوية لاحتياجاتك وتفضيلاتك، ونصمم خدماتنا لتتناسب مع متطلباتك الفريدة. نهجنا الذي يركز على العميل يضمن أن تكون رحلتك العقارية سلسة وشفافة وناجحة.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
@@ -240,8 +239,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">Exclusive Property Portfolio</h3>
-            <p class="text-amber-800">Access our exclusive portfolio of premium properties across diverse locations. We maintain strong relationships with top developers, giving you first access to the best properties before they hit the market.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4 text-center">محفظة عقارية حصرية</h3>
+            <p class="text-amber-800">الوصول إلى محفظتنا الحصرية من العقارات الفاخرة عبر مواقع متنوعة. نحافظ على علاقات قوية مع كبار المطورين، مما يمنحك حق الوصول الأول إلى أفضل العقارات قبل طرحها في السوق.</p>
           </div>
         </div>
       </div>
@@ -251,71 +250,71 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           <!-- Our Mission -->
           <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
-            <h2 class="text-3xl font-bold mb-6 text-amber-900">Our <span class="text-amber-500">Mission</span></h2>
+            <h2 class="text-3xl font-bold mb-6 text-amber-900">مهمتنا <span class="text-amber-500"></span></h2>
             <p class="text-amber-800 mb-4">
-              Our mission at EGY PROJECTS is to transform the real estate experience through integrity, innovation, and exceptional service. We are committed to:
+              مهمتنا في إيجي بروجكتس هي تحويل تجربة العقارات من خلال النزاهة والابتكار والخدمة الاستثنائية. نحن ملتزمون بـ:
             </p>
             <ul class="space-y-3 text-amber-800">
               <li class="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Connecting clients with properties that enhance their quality of life and meet their investment goals.</span>
+                <span>ربط العملاء بالعقارات التي تعزز جودة حياتهم وتلبي أهدافهم الاستثمارية.</span>
               </li>
               <li class="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Providing transparent, ethical guidance throughout the property acquisition process.</span>
+                <span>تقديم إرشادات شفافة وأخلاقية طوال عملية اقتناء العقارات.</span>
               </li>
               <li class="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Building lasting relationships based on trust, expertise, and exceptional results.</span>
+                <span>بناء علاقات دائمة على أساس الثقة والخبرة والنتائج الاستثنائية.</span>
               </li>
             </ul>
           </div>
 
           <!-- Our Vision -->
           <div class="bg-amber-100 border border-amber-200 p-8 rounded-xl shadow-lg">
-            <h2 class="text-3xl font-bold mb-6 text-amber-900">Our <span class="text-amber-500">Vision</span></h2>
+            <h2 class="text-3xl font-bold mb-6 text-amber-900">رؤيتنا <span class="text-amber-500"></span></h2>
             <p class="text-amber-800 mb-4">
-              We envision a future where finding and acquiring property is a seamless, enjoyable experience for everyone. Our vision encompasses:
+              نحن نتصور مستقبلاً يكون فيه العثور على العقارات واقتناؤها تجربة سلسة وممتعة للجميع. تشمل رؤيتنا:
             </p>
             <ul class="space-y-3 text-amber-800">
               <li class="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Being the most trusted and innovative real estate partner in Egypt and beyond.</span>
+                <span>أن نكون الشريك العقاري الأكثر ثقة وابتكارًا في مصر وخارجها.</span>
               </li>
               <li class="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Setting new standards for client satisfaction and service excellence in the real estate industry.</span>
+                <span>وضع معايير جديدة لرضا العملاء والتميز في الخدمة في صناعة العقارات.</span>
               </li>
               <li class="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span>Contributing to community development through responsible real estate practices and partnerships.</span>
+                <span>المساهمة في تنمية المجتمع من خلال ممارسات وشراكات عقارية مسؤولة.</span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-amber-50  py-16">
+    <section class="bg-amber-50 py-16">
       <div id="serv" class="container mx-auto px-6">
         <!-- Section Header -->
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            We <span class="text-amber-500">Provide</span>
+            نقدم <span class="text-amber-500"></span>
           </h2>
           <p class="text-lg text-amber-900">
-            Comprehensive real estate solutions tailored to your specific needs.
+            حلول عقارية شاملة مصممة خصيصًا لتلبية احتياجاتك المحددة.
           </p>
         </div>
 
@@ -330,8 +329,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4">First Home</h3>
-            <p class="text-amber-800">Find your perfect first home with our expert guidance and exclusive listings tailored for first-time buyers.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">المنزل الأول</h3>
+            <p class="text-amber-800">اعثر على منزلك الأول المثالي مع توجيهاتنا الخبيرة وقوائمنا الحصرية المصممة للمشترين لأول مرة.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
@@ -342,8 +341,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Second Home</h3>
-            <p class="text-amber-800">Discover the perfect vacation or investment property to complement your primary residence.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">المنزل الثاني</h3>
+            <p class="text-amber-800">اكتشف العقار المثالي للإجازة أو الاستثمار لتكملة مسكنك الرئيسي.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
@@ -354,8 +353,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Commercial</h3>
-            <p class="text-amber-800">Premium commercial spaces for businesses of all sizes, from retail locations to office complexes.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">تجاري</h3>
+            <p class="text-amber-800">مساحات تجارية متميزة للشركات من جميع الأحجام، من مواقع البيع بالتجزئة إلى مجمعات المكاتب.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
@@ -366,8 +365,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Clinics</h3>
-            <p class="text-amber-800">Specialized properties designed for healthcare professionals, with optimal layouts for medical practices.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">عيادات</h3>
+            <p class="text-amber-800">عقارات متخصصة مصممة للمتخصصين في الرعاية الصحية، مع تخطيطات مثالية للممارسات الطبية.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
@@ -378,8 +377,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Development Land</h3>
-            <p class="text-amber-800">Prime land parcels for development projects, with strategic locations and growth potential.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">أراضي للتطوير</h3>
+            <p class="text-amber-800">قطع أراضي رئيسية لمشاريع التطوير، مع مواقع استراتيجية وإمكانات للنمو.</p>
           </div>
 
           <div class="bg-amber-100 border border-amber-200 p-6 rounded-xl text-center">
@@ -390,8 +389,8 @@
                 </svg>
               </div>
             </div>
-            <h3 class="text-2xl font-semibold text-amber-900 mb-4">Admin</h3>
-            <p class="text-amber-800">Comprehensive administrative services for property owners, including management and maintenance solutions.</p>
+            <h3 class="text-2xl font-semibold text-amber-900 mb-4">إدارة</h3>
+            <p class="text-amber-800">خدمات إدارية شاملة لمالكي العقارات، بما في ذلك حلول الإدارة والصيانة.</p>
           </div>
         </div>
       </div>
@@ -401,10 +400,10 @@
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            Our <span class="text-amber-500">Partners</span>
+            شركاؤنا <span class="text-amber-500"></span>
           </h2>
           <p class="text-lg text-amber-900 max-w-3xl mx-auto">
-            We collaborate with industry leaders to bring you the best property options and services.
+            نتعاون مع الشركات الرائدة في الصناعة لنقدم لك أفضل خيارات وخدمات العقارات.
           </p>
         </div>
 
@@ -428,10 +427,10 @@
       <div class="container mx-auto px-6">
         <div class="text-center mb-12">
           <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            We Deal With <span class="text-amber-500">Top Developers</span>
+            نتعامل مع <span class="text-amber-500">كبار المطورين</span>
         
       <p class="text-lg text-amber-900 max-w-3xl mx-auto">
-        Access exclusive properties from Egypt's premier real estate developers through our established partnerships.
+        الوصول إلى عقارات حصرية من أفضل مطوري العقارات في مصر من خلال شراكاتنا الراسخة.
       </p>
     </div>
 
@@ -442,7 +441,7 @@
           <img src="/images/F9WZJXdR213lgKUF.jpg" alt="Palm Hills" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Palm Hills</h3>
+          <h3 class="font-semibold text-amber-900">بالم هيلز</h3>
         </div>
       </div>
 
@@ -451,7 +450,7 @@
           <img src="/images/images (1).png" alt="Mountain View" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Mountain View</h3>
+          <h3 class="font-semibold text-amber-900">ماونتن فيو</h3>
         </div>
       </div>
 
@@ -460,7 +459,7 @@
           <img src="/images/شركة-مصر-ايطاليا-العقارية.png" alt="Misr Italia" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Misr Italia</h3>
+          <h3 class="font-semibold text-amber-900">مصر إيطاليا</h3>
         </div>
       </div>
 
@@ -469,7 +468,7 @@
           <img src="/images/People-and-Places.jpg" alt="People & Places" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">People & Places</h3>
+          <h3 class="font-semibold text-amber-900">بيبول آند بليسز</h3>
         </div>
       </div>
 
@@ -478,7 +477,7 @@
           <img src="/images/تطوير-مصر-العقارية.jpg" alt="Tatweer Misr" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Tatweer Misr</h3>
+          <h3 class="font-semibold text-amber-900">تطوير مصر</h3>
         </div>
       </div>
 
@@ -487,7 +486,7 @@
           <img src="/images/cjM5QRQlszBIpa6N_thumb.jpg" alt="Tameer" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Tameer</h3>
+          <h3 class="font-semibold text-amber-900">تعمير</h3>
         </div>
       </div>
 
@@ -496,7 +495,7 @@
           <img src="/images/كمبوند-هايد-بارك-القاهرة-الجديدة-11.jpg" alt="Hyde Park" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Hyde Park</h3>
+          <h3 class="font-semibold text-amber-900">هايد بارك</h3>
         </div>
       </div>
 
@@ -505,7 +504,7 @@
           <img src="/images/21409362.png" alt="Modon" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Modon</h3>
+          <h3 class="font-semibold text-amber-900">مدن</h3>
         </div>
       </div>
 
@@ -514,7 +513,7 @@
           <img src="/images/ريدي-جروب-للتطوير-العقارى.jpg" alt="Reedy Group" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Reedy Group</h3>
+          <h3 class="font-semibold text-amber-900">ريدي جروب</h3>
         </div>
       </div>
 
@@ -523,7 +522,7 @@
           <img src="/images/ora_developers_egypt_logo.jpeg" alt="ORA" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">ORA</h3>
+          <h3 class="font-semibold text-amber-900">أورا</h3>
         </div>
       </div>
 
@@ -532,7 +531,7 @@
           <img src="/images/La-vista-developments-png-300x225.png" alt="La Vista" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">La Vista</h3>
+          <h3 class="font-semibold text-amber-900">لا فيستا</h3>
         </div>
       </div>
 
@@ -541,7 +540,7 @@
           <img src="/images/WhatsApp-Image-2022-07-28-at-12.38.04-PM-2.webp" alt="Inertia" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Inertia</h3>
+          <h3 class="font-semibold text-amber-900">إنرتيا</h3>
         </div>
       </div>
 
@@ -550,7 +549,7 @@
           <img src="/images/kulture-developments.jpeg" alt="Kalture" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">KULTURE</h3>
+          <h3 class="font-semibold text-amber-900">كالتشر</h3>
         </div>
       </div>
 
@@ -559,7 +558,7 @@
           <img src="/images/89201688644570.webp" alt="Upwyde" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Upwyde</h3>
+          <h3 class="font-semibold text-amber-900">أبوايد</h3>
         </div>
       </div>
 
@@ -568,7 +567,7 @@
           <img src="/images/Doja.jpg" alt="Doja" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Doja</h3>
+          <h3 class="font-semibold text-amber-900">دوجا</h3>
         </div>
       </div>
 
@@ -577,7 +576,7 @@
           <img src="/images/pyramids.jpg" alt="Pyramids" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Pyramids</h3>
+          <h3 class="font-semibold text-amber-900">بيراميدز</h3>
         </div>
       </div>
 
@@ -586,7 +585,7 @@
           <img src="/images/wKlXxUVNTH50NlBe.jpg" alt="Ahly Sabour" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Ahly Sabour</h3>
+          <h3 class="font-semibold text-amber-900">الأهلي صبور</h3>
         </div>
       </div>
 
@@ -595,7 +594,7 @@
           <img src="/images/images.jpeg" alt="K-Development" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">K-Development</h3>
+          <h3 class="font-semibold text-amber-900">كي-ديفلوبمنت</h3>
         </div>
       </div>
 
@@ -604,7 +603,7 @@
           <img src="/images/toledo_development_logo.jpeg" alt="Toledo" class="max-h-20" />
         </div>
         <div class="p-4 text-center">
-          <h3 class="font-semibold text-amber-900">Toledo</h3>
+          <h3 class="font-semibold text-amber-900">توليدو</h3>
         </div>
       </div>
     </div>
@@ -616,9 +615,9 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Company Info -->
       <div>
-        <h3 class="text-2xl font-bold text-amber-900">EGY PROJECTS</h3>
+        <h3 class="text-2xl font-bold text-amber-900">إيجي بروجكتس</h3>
         <p class="mt-3 text-amber-800">
-          Providing top-tier real estate solutions for over 10 years.
+          نقدم حلول عقارية من الدرجة الأولى لأكثر من 10 سنوات.
         </p>
         <div class="flex space-x-4 mt-4">
           <a href="#" class="text-amber-800 hover:text-amber-500 transition">
@@ -641,29 +640,29 @@
 
       <!-- Quick Links -->
       <div>
-        <h4 class="text-xl font-semibold text-amber-900 mb-3">Quick Links</h4>
+        <h4 class="text-xl font-semibold text-amber-900 mb-3">روابط سريعة</h4>
         <ul class="space-y-2">
           <li>
-            <a href="#" class="hover:text-amber-500 transition text-amber-800">Home</a>
+            <a href="#" class="hover:text-amber-500 transition text-amber-800">الرئيسية</a>
           </li>
           <li>
-            <a href="#about" class="hover:text-amber-500 transition text-amber-800">About</a>
+            <a href="#about" class="hover:text-amber-500 transition text-amber-800">من نحن</a>
           </li>
           <li>
-            <a href="#serv" class="hover:text-amber-500 transition text-amber-800">We Provide</a>
+            <a href="#serv" class="hover:text-amber-500 transition text-amber-800">نقدم</a>
           </li>
           <li>
-            <a href="#why-us" class="hover:text-amber-500 transition text-amber-800">Why Us</a>
+            <a href="#why-us" class="hover:text-amber-500 transition text-amber-800">لماذا نحن</a>
           </li>
           <li>
-            <a href="#cont" class="hover:text-amber-500 transition text-amber-800">Contact</a>
+            <a href="#cont" class="hover:text-amber-500 transition text-amber-800">اتصل بنا</a>
           </li>
         </ul>
       </div>
 
       <!-- Contact Information -->
       <div id="cont">
-        <h4 class="text-xl font-semibold text-amber-900 mb-3">Contact Us</h4>
+        <h4 class="text-xl font-semibold text-amber-900 mb-3">اتصل بنا</h4>
         <a href="https://maps.app.goo.gl/EhcUERCzRnCk4r8x8"> <p class="flex items-center space-x-3 text-amber-800">
           <span>📍</span> <span>التجمع الاول-ميراج مول-الدور3</span>
         </p></a>
@@ -673,7 +672,7 @@
           <span>📞</span> <span>01040588778</span>
         </p>
         <p class="flex items-center space-x-3 text-amber-800">
-          <span>📧</span> <span><a href="" class="__cf_email__" data-cfemail="4d2e2223392c2e390d282a343d3f2227282e393e632e2220">info@egy-projects.com</a></span>
+          <span>📧</span> <span><a href="" class="__cf_email__" data-cfemail="4d2e2223392c2e390d282a343d3f2227282e393e632e2220"><span class="__cf_email__" data-cfemail="046d6a626b4461637d2974766b6e616770772a676b69">[email&#160;protected]</span></a></span>
         </p>
       </div>
     </div>
@@ -681,17 +680,16 @@
     <!-- Bottom Section -->
     <div class="border-t border-amber-200 mt-8 pt-6 text-center">
       <p class="text-amber-800">
-        &copy; 2025 EGY PROJECTS. All Rights Reserved.
+        &copy; 2025 إيجي بروجكتس. جميع الحقوق محفوظة.
       </p>
     </div>
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
 <script src="main.js"></script>
   </body>
 </html>
-
