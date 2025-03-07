@@ -103,6 +103,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Add CSS for Arabic text (bolder)
+  const style = document.createElement('style');
+  style.textContent = `
+    .arabic-mode {
+      font-weight: 600;
+    }
+    
+    .arabic-mode h1, .arabic-mode h2, .arabic-mode h3, .arabic-mode h4 {
+      font-weight: 700;
+    }
+  `;
+  document.head.appendChild(style);
+
   // Language Translation
   const translations = {
     en: {
@@ -256,6 +269,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Store initial language preference (default to English)
   let currentLang = localStorage.getItem('siteLanguage') || "en";
   
+  // Function to set RTL/LTR direction based on language
+  function setDirection(lang) {
+    if (lang === 'ar') {
+      document.documentElement.setAttribute('dir', 'rtl');
+      document.body.classList.add('arabic-mode');
+    } else {
+      document.documentElement.setAttribute('dir', 'ltr');
+      document.body.classList.remove('arabic-mode');
+    }
+  }
+  
   // Function to directly translate section headings with spans
   function translateSectionHeadings() {
     // About section heading
@@ -277,13 +301,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     // Our Mission heading
-    const missionHeading = document.querySelector('.grid-cols-1.md\\:grid-cols-2.gap-12 h2:nth-of-type(1)');
+    const missionHeading = document.querySelector('.bg-amber-100:nth-of-type(1) h2');
     if (missionHeading) {
       missionHeading.innerHTML = `${translations[currentLang].ourMission.split(' ')[0]} <span class="text-amber-500">${translations[currentLang].ourMission.split(' ').slice(1).join(' ')}</span>`;
     }
     
     // Our Vision heading
-    const visionHeading = document.querySelector('.grid-cols-1.md\\:grid-cols-2.gap-12 h2:nth-of-type(2)');
+    const visionHeading = document.querySelector('.bg-amber-100:nth-of-type(2) h2');
     if (visionHeading) {
       visionHeading.innerHTML = `${translations[currentLang].ourVision.split(' ')[0]} <span class="text-amber-500">${translations[currentLang].ourVision.split(' ').slice(1).join(' ')}</span>`;
     }
@@ -301,9 +325,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     // Contact Us in footer
-    const contactUsHeading = document.querySelector('#cont h4');
+    const contactUsHeading = document.querySelector('footer h4:nth-of-type(2)');
     if (contactUsHeading) {
       contactUsHeading.textContent = translations[currentLang].contactUs;
+    }
+    
+    // Properties For Clients - special handling
+    const propertiesForClients = document.querySelector('.text-4xl.font-bold.text-amber-500 + .text-amber-800');
+    if (propertiesForClients) {
+      propertiesForClients.textContent = translations[currentLang].propertiesForClients;
     }
   }
   
@@ -333,11 +363,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const learnMoreBtn = heroSection.querySelector('button.px-6.py-3');
       if (learnMoreBtn) learnMoreBtn.setAttribute('data-translate-key', 'learnMore');
       
-      const happyCustomers = heroSection.querySelector('.grid-cols-2 p.text-amber-800:nth-child(1)');
+      const happyCustomers = heroSection.querySelector('.text-4xl.font-bold.text-amber-500 + .text-amber-800:first-of-type');
       if (happyCustomers) happyCustomers.setAttribute('data-translate-key', 'happyCustomers');
       
-      const properties = heroSection.querySelector('.grid-cols-2 p.text-amber-800:nth-child(2)');
-      if (properties) properties.setAttribute('data-translate-key', 'propertiesForClients');
+      // Properties For Clients - using a more specific selector
+      const propertiesForClients = document.querySelectorAll('.text-amber-800');
+      if (propertiesForClients.length >= 2) {
+        propertiesForClients[1].setAttribute('data-translate-key', 'propertiesForClients');
+      }
     }
     
     // About section
@@ -474,6 +507,9 @@ document.addEventListener("DOMContentLoaded", () => {
   
   // Apply translations based on the current language
   function applyTranslations() {
+    // Set RTL/LTR direction
+    setDirection(currentLang);
+    
     // Update language toggle button text
     const langToggleBtn = document.getElementById("lang-toggle");
     if (langToggleBtn) {
